@@ -14,7 +14,7 @@ the following table.
 | cslinuxlab-06 |                 |
 | cslinuxlab-07 |                 |
 | cslinuxlab-08 | 12057           |
-| cslinuxlab-09 |                 |
+| cslinuxlab-09 | 9632            |
 | cslinuxlab-10 |                 |
 | cslinuxlab-11 |                 |
 | cslinuxlab-12 |                 |

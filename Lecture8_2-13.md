@@ -37,7 +37,7 @@
 ---
 
 ### **Permissions on Remote repo**
-    - reasons...
+    - For "reasons", you typically only have write permissions to your own repos on a site like Github
     - pushing
 
 ---

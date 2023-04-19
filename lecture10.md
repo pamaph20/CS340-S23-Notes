@@ -44,8 +44,7 @@ __Def__: an investigation conducted to provide stakeholders with information abo
 
 - Test case **discoverer**: finds all these unit tests in the code (based on a special naming scheme)
 - Test case **runner**: chooses which tests to execute
-- **Test case**
-    - perform the following in isolation:
+- **Test case**: perform the following in isolation:
     1. Establish some precondition
     2. Perform an operation
     3. Assert postconditions

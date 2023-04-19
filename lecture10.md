@@ -26,11 +26,11 @@ __Def__: an investigation conducted to provide stakeholders with information abo
 
 
 # Types of Software Testing
-- __System Testing__: test an end-to-end system for correctness
 - __Regression Testing__: test for regressions in source code
     - "I swear I saw this and fixed this before"
     - When a developer fixes a bug, they also add a __regression test__ that specifically exposes the bug
     - This ensures that future implementations still fix this bug
+- __System Testing__: test an end-to-end system for correctness
 - __Unit Testing__: test individual chunks (units!) of source code to determine that they work
     - unit: function, module, class, etc.
 

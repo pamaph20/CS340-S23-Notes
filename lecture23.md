@@ -25,3 +25,6 @@ Interesting(P1) = NO and Interesting(P2) = YES because consistent: <br />
 
 If this is the case, By monotone:
 <br /> no subset if interesting, the interesting subset is a comnination of elements from P1 and P2
+
+# Lecture 23 notes outline
+

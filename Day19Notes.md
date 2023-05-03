@@ -1,6 +1,6 @@
 # Lecture Notes For 3/29/23 - Lecture 19
 ## Overview
-This is a continuation of the notes from 3/27 on the overiew and sections of the bug life cycle and an introduction into fault localization. 
+This is a continuation of the notes from 3/27 on the overview and sections of the bug life cycle and an introduction into fault localization. 
 
 ---
 
@@ -32,7 +32,7 @@ All of these assignments are based on the idea of "Ownership". But how do we det
 >#### Resolution Definition -> Result of the most recent effort to address it.
 *This is not the same as "fixed" because there are other possible outcomes.*
 
-How many reports end up wit a duplicate resolution?? 
+How many reports end up with a duplicate resolution?? 
 
 ---
 ### 5) Send to Quality Assurance
@@ -59,7 +59,7 @@ What is the most frustrating part of debugging?
 * Time Consuming.
 
 >#### Definition
->#### Fault Localization -> The task of identifying source code reginions implicated with  a bug.
+>#### Fault Localization -> The task of identifying source code regions implicated with  a bug.
 If regression test is failing which lines should we change to resolve this failing test?
 
 How do we debug?

@@ -39,23 +39,25 @@
  - 100% line coverage and still have bugs
  - state or sequencing of execution that still produces bugs
  - Implicit control flow: -> "hidden" if statement
-  - ex) -> return a / b -> 
-  - if b != 0:
-  -   return a / b
-  - else:
-  -   abort
-  - ex) -> print(ref.field) -> 
-  - if ref != null:
-  -   print(ref.field)
-  - else:
-  -   abort
+  - ex)
+  -     return a / b -> 
+  -     if b != 0:
+  -       return a / b
+  -     else:
+  -       abort
+  - ex)
+  -     print(ref.field) -> 
+  -     if ref != null:
+  -       print(ref.field)
+  -     else:
+  -       abort
 * Interesting test cause implicit or explicit changes of control
   -> cause different branches of conditional statements to execute
 * Might reduce to covering all branches
 * Branch coverage - total number of conditional branches executed / covered by a test suite
-  - if true   }
-              } - covered separately
-  - if false  }
+  - if true   
+  - if false 
+  - The 'if true' case and 'if false' case are covered separately.
 
 **Exam 1**
 * Written Exam
@@ -64,10 +66,10 @@
   - Software vs Programs
   - Time allocation to various SE tasks
   - Linux / command line -> typical program
-    -> loops / conditions, file paths, scripting (shebang / permissions), text editors
+    - loops / conditions, file paths, scripting (shebang / permissions), text editors
   - Version control systems
-    -> centralized vs distributed, deltas vs snapshots, git basics (staging), working directories, 
+    - centralized vs distributed, deltas vs snapshots, git basics (staging), working directories, 
     commit histories, branching/tags/head, rebasing vs merging, remote/PRs/forks, commit messages
   - Quality Assurance Testing
-    -> Internal vs External, Rice's Theorem & limit of assessment, unit testing, system integration, 
+    - Internal vs External, Rice's Theorem & limit of assessment, unit testing, system integration, 
     load, test driven development, test cases & parts, mocking

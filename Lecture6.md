@@ -1,6 +1,8 @@
 # Lecture 6 - 2/6/2023
 Catya Temkin
 
+Summary: Version control systems and useful related git commands. 
+
 ## Version Control Systems
 - Simplify maintaining code 
 
@@ -43,10 +45,13 @@ Catya Temkin
     2. Staging 
     3. Repository (history)
 - Useful and related Git commands
-    - git status => view current status 
-    - git log => sequence and information of past commits 
-    - git add => move from working directory to staged
-    - git restore --staged => move from staged back to working directory
-    - git commit => move from staged to repository
-    - git reset --soft HEAD^ => undo commit
-    - git checkout => move from repository to working directory
+    - `status` view current status 
+    - `log` sequence and information of past commits 
+    - `add` move from working directory to staged
+    - `restore --staged` move from staged back to working directory
+    - `git commit` move from staged to repository
+    - `reset --soft HEAD^` undo commit
+    - `checkout` move from repository to working directory
+
+## Meme of the day
+![Something Fun](https://iamskb258154309.files.wordpress.com/2020/07/c7ded-1qdejjdxa0orhqnkkmjmytg.jpeg)

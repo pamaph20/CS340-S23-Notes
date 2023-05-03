@@ -68,3 +68,33 @@ fi
 # output the header and cut out new york & 'fip' because it isnt necessary
 head -n 1 $temp_file | cut -d , -f 1,4-5 
 ```
+
+**Modifying How We Represent the Data**  
+Currently, our script can output COVID data representing the total cases/deaths cumulatively for each day,  
+but we can modify it to instead represent daily change using a *for-loop* and some math.  
+
+We can use double parentheses to perform math operations, like (($variable)), or ((number)).  
+
+```
+# for each entry in our file, specifying which state and which columns we want, let's loop
+for entry in $(grep -i "$state" "$temp_file" | cut -d ',' -f 1,4-5)
+do
+    # entry is a single line for the data
+    # assign a var for each piece of each entry we want
+    date=$(echo $entry | cut -d ',' -f 1)
+    cases=$(echo $entry | cut -d ',' -f 2)
+    deaths=$(echo $entry | cut -d ',' -f 3)
+    
+    # echo the date we are currently on 
+    # subtract the previous deaths from the current deaths
+    # subtract the previous cases from the current deaths
+    # then, echo them in the proper formatting.
+    echo $date,$((cases - prev_cases)),$((deaths - prev_deaths))
+
+    prev_cases=$cases
+    prev_deaths=$deaths
+
+done
+```
+With each of these pieces outlined, we can put them together and our script will generate  
+a comprehensive set of data.

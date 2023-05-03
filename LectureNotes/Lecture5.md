@@ -44,3 +44,27 @@ then
     exit 1
 fi
 ```
+
+**Parsing a File**  
+We want to be able to grab what we want specifically from our data, without  
+including unnecessary columns or lines.
+- *head* allows us to grab the top of the file.
+- *tail* allows us to grab the end of the file.  
+
+Using these flags, piping, and a delimiter, we can not only cut out   
+unnecessary pieces of the header like the state name and the 'fips' column,  
+but we can also create an if-statement to validate that the state is in our data.  
+```
+# check to make sure the state exists within our file 
+# first cut out unecessary parts of the file and then search for our state
+state_check=$(tail +2 $temp_file | cut -d ',' -f 2 $temp_file | grep "$state")
+if [ -z "$state_check" ] # if no such state exists
+then   
+    echo "No data for $state"
+    rm $temp_file
+    exit 2
+fi
+
+# output the header and cut out new york & 'fip' because it isnt necessary
+head -n 1 $temp_file | cut -d , -f 1,4-5 
+```

@@ -97,4 +97,79 @@ do
 done
 ```
 With each of these pieces outlined, we can put them together and our script will generate  
-a comprehensive set of data.
+a comprehensive set of data.  
+
+Below is the full 'covid.sh' script:
+
+
+```
+#!/bin/bash
+
+# we need to download the latest NYT covid data and print out a report for a given state.
+# make a temp file to store the covid data
+temp_file=$(mktemp)
+
+
+
+curl -s -k -o $temp_file https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv
+
+
+# read state using command line arguments i.e.) ./covid.sh "New York"
+# this assigns state to the first command line argument
+state=$1
+
+# check that command arg isnt empty
+if [ -z "$state" ]
+then
+    echo "Usage: $0 state"
+    rm $temp_file
+    exit 1
+fi
+
+# check if the state is actually in our data
+state_check=$(tail +2 $temp_file | cut -d ',' -f 2 $temp_file | grep "$state")
+if [ -z "$state_check" ]
+then   
+    echo "No data for $state"
+    rm $temp_file
+    exit 2
+fi
+
+
+
+
+echo "Covid cases and deaths for $state"
+
+# Output daily deaths
+
+prev_cases=$((0)) # double parens indicates an integer/an expression
+prev_deaths=$((0))
+
+
+# output the header and cut out new york & 'fip' because it isnt necessary
+head -n 1 $temp_file | cut -d , -f 1,4-5 
+
+
+# grep state info from temp file
+
+# exclude the header line so that we dont accept faulty greps 
+for entry in $(grep -i "$state" "$temp_file" | cut -d ',' -f 1,4-5)
+do
+    # entry is a single line for the data
+    date=$(echo $entry | cut -d ',' -f 1)
+    cases=$(echo $entry | cut -d ',' -f 2)
+    deaths=$(echo $entry | cut -d ',' -f 3)
+
+    echo $date,$((cases - prev_cases)),$((deaths - prev_deaths))
+
+    prev_cases=$cases
+    prev_deaths=$deaths
+
+done
+
+
+
+
+# remove the temp file to avoid filling up space with useless stuff
+rm $temp_file
+```

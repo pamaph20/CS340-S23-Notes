@@ -5,8 +5,11 @@ This is a continuation of the notes from 3/27 on the overiew and sections of the
 ---
 
 ## **Bug life Cycle Continued ->**
+
 ### 3) Assignment
->####  Assignment Definition -> Who should fix this bug.
+
+>#### Definition
+>#### Assignment Definition -> Who should fix this bug.
 
 One should  ***Associate / Assign*** a developer or team with addressing the bug report.
 
@@ -25,6 +28,7 @@ All of these assignments are based on the idea of "Ownership". But how do we det
 ---
 ### 4) Bug resolution
 
+>#### Definition
 >#### Resolution Definition -> Result of the most recent effort to address it.
 *This is not the same as "fixed" because there are other possible outcomes.*
 
@@ -54,6 +58,7 @@ What is the most frustrating part of debugging?
 * Finding the actual bug.
 * Time Consuming.
 
+>#### Definition
 >#### Fault Localization -> The task of identifying source code reginions implicated with  a bug.
 If regression test is failing which lines should we change to resolve this failing test?
 

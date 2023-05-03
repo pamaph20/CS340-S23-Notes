@@ -25,3 +25,22 @@ less $temp_file
 #clean up the temporary file
 rm $temp_file
 ```
+
+
+**Using Command Line Arguments in BASH**  
+Arguments come after the executable and are an array of strings.  
+We refer to these arguments with indices $1, $2, ...$n.  
+To combine these arguments, we can add quotation marks to make two string arguments into one; i.e.:  
+`- { "New York" }` instead of `{"New", "York"}`
+
+**Checking for Bad Arguments**  
+We can use if statements in BASH to filter out bad arguments.  
+To do this, we use an if statement with a *-z* flag to make sure an argument exists.  
+```
+if [ -z "$state" ]
+then
+    echo "Usage: $0 state"
+    rm $temp_file
+    exit 1
+fi
+```

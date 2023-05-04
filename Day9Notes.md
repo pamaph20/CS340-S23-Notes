@@ -34,3 +34,16 @@ Warm-up: Set up your linux machine to support ssh with github
         - Follow local coding standards
 </br>
 
+### External Quality
+    - **External Quality**: What does doing the right thing mean?
+        - Doing the right thing means that the software behaves according to the specification (what makes a good spec)
+        - Doesn't do the "Bad thing"
+        - Possible bad things:
+            - Crashes
+            - Causes death
+            - Wrong outputs
+            - Security breaches or leaks
+
+    - How do we handle the inevitable failure?
+    - Robustness against maintence mistakes
+        - Do fixed bugs sneak back into the code?

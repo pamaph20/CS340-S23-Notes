@@ -2,17 +2,17 @@
 ### 2/20/23
 
 ## Overview
-This lecture contains information about how we might go about assessing the internal and external quality of a piece of software through software testing
+This lecture contains information about how we might go about assessing the internal and external quality of a piece of software through software testing.
 
 ---
 
 ## Software Testing
 
 > #### Definition
-> __internal quality__ is developer-facing quality
+> __Internal quality__ is developer-facing quality.
 
 > #### Definition
-> __external quality__ is customer-facing quality
+> __External quality__ is customer-facing quality.
 
 ## Testing a Python list
 If we were to try and create tests for a list in python, what might we test?
@@ -24,7 +24,7 @@ If we were to try and create tests for a list in python, what might we test?
 - This can get complicated really quick.
 
 > #### Definition
-> __Software testing__ is an investigation conducted to provide stakeholders with information about the quality of the software product or service under review
+> __Software testing__ is an investigation conducted to provide stakeholders with information about the quality of the software product or service under review.
 
 
 - Typically, tests involve input data and comparisons with output data.
@@ -32,10 +32,10 @@ If we were to try and create tests for a list in python, what might we test?
 
 ## Testing in Project 1
 - We compared provided program's output to expected output.
-    - Did this by running the program with provided inputs.
+    - We did this by running the program with provided inputs.
 
 > #### Definition
-> an __oracle__ gives us the right answer to a given input
+> An __oracle__ gives us the right answer to a given input.
 
 ---
 
@@ -46,11 +46,11 @@ In this lecture, we will discuss regression testing, system testing, and unit te
 
 ## Regression Testing
 
-Testing for regressions in the source code.
+If a regression is when something "goes backwards", regression testing is testing for regressions in the source code.
 > #### Definition
-> A __regression test__ is a test that exposes a particular bug, and is used to ensure that future implementations of the software still fix this bug
+> A __regression test__ is a test that exposes a particular bug, and is used to ensure that future implementations of the software still fix this bug.
 
-- "I swear I saw this and fixed this before"
+- These are "I swear I saw this and fixed this before" tests.
 - When a developer fixes a bug, they can add a regression test that exposes this bug to make sure it stays fixed.
 
 ---
@@ -58,31 +58,31 @@ Testing for regressions in the source code.
 ## System Testing
 
 > #### Definition
-> Testing an end-to-end system for correctness is called __system testing__
+> Testing an end-to-end system for correctness is called __system testing__.
 
 ---
 
 ## Unit Testing
 
 > #### Definition
-> testing individual chunks of source code to determine that they work is called __unit testing__
+> Testing individual chunks of source code to determine that they work is called __unit testing__.
 - A unit might be a function, module, class, etc.
 - Unit tests are very common.
 - As such, unit test frameworks are very common.
-    - Junit (Java), unittest (python), etc.
-    - Unit tests look like other code.
-    - Provides special functions/methods to return a boolean or certain failure assertions.
+    - Junit (Java) and unittest (python) are examples of these frameworks.
+    - They ensure that unit tests look like other code.
+    - They provide special functions/methods to return a boolean or certain failure assertions.
 
 > #### Definition
-> a test case __discoverer__ finds all unit tests in the code based on a special naming scheme
+> A test case __discoverer__ finds all unit tests in the code based on a special naming scheme.
 
 > #### Definition
-> a test case __runner__ chooses which tests to execute
+> A test case __runner__ chooses which tests to execute.
 
 > #### Definition
-> A __test case__ performs three operations in isolation: (1) establish some precondition, (2) perform an operation, (3) assert postconditions
+> A __test case__ performs three operations in isolation: (1) establish some precondition, (2) perform an operation, (3) assert postconditions.
 
 > #### Definition
-> A __test fixture__ surrounds a test case to provide code that is run before and after each test case
+> A __test fixture__ surrounds a test case to provide code that is run before and after each test case.
 
 - Test fixtures are often used for set up (before) and clean up (after).

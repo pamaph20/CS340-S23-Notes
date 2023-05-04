@@ -47,3 +47,18 @@ Warm-up: Set up your linux machine to support ssh with github
     - How do we handle the inevitable failure?
     - Robustness against maintence mistakes
         - Do fixed bugs sneak back into the code?
+
+</br>
+
+### Rice's Theorem
+    - Why don't we just write a new program X to tell us if our software Y is correct?
+        - **Rice's Theorem**: Presents X from always giving the right answer
+            - All non-trivial semantic properties are undecidable
+    
+    - Note: X is not always wrong, but X is not always right either and we don't have a way of knowing the difference
+
+    - What should we do instead?
+        - We approximate and use heuristics
+        - Use things like type checkers, linters and static analyzers
+
+</br>

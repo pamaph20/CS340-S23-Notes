@@ -14,9 +14,9 @@
 5. wrap messages for ease of reading (72-80 characters)
 
 #### ***Overall goal is team efficiency***
--> easier review
--> easier to troubleshoot
--> easier to revert
+-> easier review  
+-> easier to troubleshoot  
+-> easier to revert  
 
 ---
 

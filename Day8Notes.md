@@ -23,7 +23,9 @@
 ### **Collaborating with Git Repos**
     - Connect a repository to another copy of the repo by specifying a remote
 
-    Git is a distributed version control system. Each Developer has own copy of the commit tree. You must sync these changes with the other copies of the repo.
+    Git is a distributed version control system. 
+    Each Developer has own copy of the commit tree. 
+    You must sync these changes with the other copies of the repo.
 
     git remote -v --> list remote repositories
 

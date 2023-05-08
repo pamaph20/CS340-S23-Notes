@@ -1,6 +1,9 @@
 # Exam 1 Study Guide
 ## For exam on 01/03/2023
 
+# Overview
+This file reviews the concepts and ideas covered from the beginning of the semester to 3/1/23. The document follows the format we followed in the class prior to the exam. First off all the topics we covered are listed and then it delves into more specific info, such as relevant commands. 
+
 ## Topics
 - Software vs. programs
 - Time allocation to various SE tasks

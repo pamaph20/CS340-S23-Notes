@@ -1,7 +1,11 @@
 ## Lecture 12
-# 2/27/2023
+### 2/27/2023
 
-**Measuring Quality of Tests**
+## Overview
+This document is the lecture 12 (2/27/2023) notes for CS340: Software Engineering. This day of lecture discuses measuring quality of tests, test suite quality metrics, and the topics that will be covered in Exam 1. 
+___
+
+## Measuring Quality of Tests
 * Tests only allow us to draw conclusions about the lines of code that get eexecuted
   -> How much of this exists?
 * Our goal with a test suite: all of the code / requirements should be covered (checked) by the test suite
@@ -22,8 +26,9 @@
     - test B -> coveres more lines
 * What assumptions are we making?
  - we gain the same amount of confidence (or info) we gain per line visited
- 
-**Test Suite Quality Metrics**
+___
+
+## Test Suite Quality Metrics
 * A test quite quality metric assesses the quality of a test suite (with respect to an external notion of utility) and allows test suites to be compared
 * Line coverage -> one such quality metric
  - given two test suites that both run in the provided resource budget, prefer the one with higher line coverage
@@ -34,8 +39,9 @@
   -> slow down execution, manual effort to insert, observer effect
  - Coverage Instrumentation -> program will be automatically modified to track coverage while minimizing observer effect
  - "Solved problem" -> python coverage, gcc gcov
+___
 
-**What can go wrong with line coverage**
+## What can go wrong with line coverage
  - 100% line coverage and still have bugs
  - state or sequencing of execution that still produces bugs
  - Implicit control flow: -> "hidden" if statement
@@ -58,8 +64,9 @@
   - if true   
   - if false 
   - The 'if true' case and 'if false' case are covered separately.
+___
 
-**Exam 1**
+## Exam 1
 * Written Exam
 * Allowed one 8.5x11 piece of paper for reference notes
 * Topics

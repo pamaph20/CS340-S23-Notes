@@ -2,6 +2,10 @@
 
 #  3/15/2023
 
+### Overview
+This lecture focuses mainly on working with test inputs. Topics include Control flow graphs, automated test generation, 
+oracle problems, path predicates, and fuzz testing.
+
 ****How do we make software work with partially implemented features?****
 
  - Why is this a problem we need to solve?

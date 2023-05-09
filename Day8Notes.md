@@ -71,9 +71,9 @@ We won't be able to push
 
 ### **Challege:** 
 #### **How do we commit to a repo that does not grant us write permission**
-- Pull Requests
-    **Pull Request
-    : Definition**
+    Pull Request: Request for a developer to pull your commits into their upstream-repo
+
+FIXME: ADD FLOW CHART!!!
 
 ---
 

@@ -88,8 +88,9 @@ FIXME: ADD FLOW CHART!!!
 
 ---
 
-## **Quality Assurance and Testing**
-- what it is
-    **Quality Assurance
-    : Definition**
-    
+### **Quality Assurance and Testing**
+Want to deliver high-quality software at low cost  
+How do we increase, asses, and assure software quality?
+
+    Quality Assurance: is the maintenance of a desired level of quality in a service or product, especially by means of attention to every step of the process of delivery or production.
+

@@ -15,12 +15,10 @@
 4. Don't assume outside resource access (Links to external sites)
 5. wrap messages for ease of reading (72-80 characters)
 
----
-
-#### ***Overall goal is team efficiency***
--> easier review  
--> easier to troubleshoot  
--> easier to revert  
+>#### ***Overall goal is team efficiency***
+>-> easier review  
+>-> easier to troubleshoot  
+>-> easier to revert  
 
 ---
 
@@ -71,7 +69,8 @@ We won't be able to push
 
 ---
 
-### **Challege: How do we commit to a repo that does not grant us write permission**
+### **Challege:** 
+#### **How do we commit to a repo that does not grant us write permission**
 - Pull Requests
     **Pull Request
     : Definition**

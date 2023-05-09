@@ -80,3 +80,6 @@ ___
   - Quality Assurance Testing
     - Internal vs External, Rice's Theorem & limit of assessment, unit testing, system integration, 
     load, test driven development, test cases & parts, mocking
+## Something Fun
+Good Luck Studying for Exam 1!
+<p><a href="https://giphy.com/gifs/studiosoriginals-J1YFTAeTT3UAxnl6Bx">via GIPHY</a></p>

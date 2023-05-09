@@ -6,12 +6,16 @@
 - 4 commits to feature
 - rebase feature onto main
 
+---
+
 ### **Review - good ettique for commits**
 1. Commit message should describe contents of changes
 2. Seperate out functionality/formatting changes
 3. Smaller commits
 4. Don't assume outside resource access (Links to external sites)
 5. wrap messages for ease of reading (72-80 characters)
+
+---
 
 #### ***Overall goal is team efficiency***
 -> easier review  
@@ -29,6 +33,7 @@ You must sync these changes with the other copies of the repo.
 
 git remote -v --> list remote repositories
 
+---
 
 ### **Syncing Changes**
 Git fetch   
@@ -48,9 +53,11 @@ Git merge origin/main
 >Once you push to a remote, assume you cannot change those commits
 >- Someone might use one of the commits as the basis of their work
 
+---
+
 #### **General Rule of thumb**
-- Rebase
-- Merge
+- Rebase unshared changes
+- Merge with shared changes
 
 ---
 
@@ -69,6 +76,8 @@ Git merge origin/main
 
 ### **Typical Workflow to contribute to a git repo:**
 - Steps 1-6
+
+---
 
 ## **Quality Assurance and Testing**
 - what it is

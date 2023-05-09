@@ -78,7 +78,13 @@ FIXME: ADD FLOW CHART!!!
 ---
 
 ### **Typical Workflow to contribute to a git repo:**
-- Steps 1-6
+1. Assign self issue/bug report
+2. Fork repo/clone
+3. Make a branch for bug fix
+4. ***Commit to new branch***
+5. Push to our fork
+6. Open our pull request (PR)
+> Note: Any additional commits on this fork branch get added to PR
 
 ---
 

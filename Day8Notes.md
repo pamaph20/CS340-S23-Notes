@@ -62,8 +62,12 @@ Git merge origin/main
 ---
 
 ### **Permissions on Remote repo**
-- For "reasons", you typically only have write permissions to your own repos on a site like Github
-- pushing
+Principle of Least Priviledge
+- For "reasons", you typically only have write permissions 
+to your own repos on a site like Github
+
+We won't be able to push  
+- can't sync our own changes
 
 ---
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Lecture 16
 Install : openjdk-19-jdk-headless and maven 
 Sudo apt install "the thing you want to install" 
@@ -29,3 +30,6 @@ Challenge - CI/ CD requires frequent commits and frequent deployments
 			§ The feature is broken or doesn't work …
 			§ CI/CD deploys this to this end user 
 			§ How do we handle broken changes being deployed without breaking the code for the user 
+=======
+Fill in lecture 16 notes 
+>>>>>>> main

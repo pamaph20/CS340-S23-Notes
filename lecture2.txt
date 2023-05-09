@@ -1,0 +1,28 @@
+					Lecture outline 
+
+1) Problems caused by issues in software
+a) Northeast Blackout of 3003
+b)	Aviation – 737 MAX
+c)	ETCS software malfunction
+d)	Ariane 5 flight 501
+e)	Patriot Missile defense system error
+2)Graphical User Interface
+3)Command line access
+4)Linux based OS
+5) sshing and other definitions
+	a) shell def
+	b) secure shell def
+	c) how to ssh
+6)Using terminal on the secure shell
+	a) logging into linuxlabs
+	b) creating password 
+	c) using a certificate
+7)basic bash commands
+	a) keygen
+	b) psd, ls, cd
+8)Directory structure linux
+9) setting up CS340 directory 
+10) scraping from the internet
+11) how to use less and the man pages 
+12)how to use ls and its flags 
+13)how to use for loops in bash

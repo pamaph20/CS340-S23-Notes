@@ -31,10 +31,22 @@ git remote -v --> list remote repositories
 
 
 ### **Syncing Changes**
-- Git fetch
-- Git push
-    - git fetch && git merge origin/...
-- git merge origin/main
+Git fetch   
+- downloads new commits from the remote  
+
+Git push  
+- uploads our new commits to the remote  
+
+Git fetch && git merge origin/...
+- git pull -> fetches and merges    
+
+Git merge origin/main
+
+>Note: all remote branches prefixed with remote name  
+>- EX. origin/main
+
+>Once you push to a remote, assume you cannot change those commits
+>- Someone might use one of the commits as the basis of their work
 
 #### **General Rule of thumb**
 - Rebase
